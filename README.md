@@ -11,6 +11,8 @@ difference in data distribution between the data of Y2020 and before Y2020. So i
 included. The following is the finally split of the dataset:
 * Train Data: 9 months (2018/1 ~ 2018/6 and 2019/1 ~ 2019/3)
 * Test Data :3 months (2019/4 ~ 2019/6)
+All data can be downloaded in the following URL:
+https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 ## Data Cleaning
 Records meet the following conditions are dropped.
@@ -21,6 +23,7 @@ Records meet the following conditions are dropped.
 ## Feature engineering
 Records in dataset are binned in 5-minutes period. For one prediction, the input is a 36-element-length array (3 hours)
 and the next 6-element-length array (30 minutes) will be calculated as true labels.
+![image](https://github.com/ohmycola/Taxi-Demand-Prediction-Study/blob/main/images/feature.png)
 
 ## Model selection
 A LSTM model is used as baseline model.

@@ -10,8 +10,8 @@ used. In addition, Y2020’s data is much less than before because of the COVID-
 difference in data distribution between the data of Y2020 and before Y2020. So in this demo, Y2020’s data is not
 included. The following is the finally split of the dataset:
 * Train Data: 9 months (2018/1 ~ 2018/6 and 2019/1 ~ 2019/3)
-* Test Data :3 months (2019/4 ~ 2019/6)
-All data can be downloaded in the following URL:
+* Test Data :3 months (2019/4 ~ 2019/6)<br/>
+All data can be downloaded in the following URL:<br/>
 https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 ## Data Cleaning
@@ -27,6 +27,7 @@ and the next 6-element-length array (30 minutes) will be calculated as true labe
 
 ## Model selection
 A LSTM model is used as baseline model.
+I have tried a 1D-CRNN model, but the performance is not good, I will try to fine-tuning in the future.
 Other model results will coming soon.
 
 ## Performance metrics
